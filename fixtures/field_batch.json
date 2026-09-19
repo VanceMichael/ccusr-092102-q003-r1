@@ -1,0 +1,37 @@
+{
+  "batch": {
+    "title": "1989年晋中田野拍摄",
+    "photographer": "赵摄",
+    "started_at": "1989-04-10",
+    "ended_at": "1989-04-20",
+    "notes": "胶片卡片随卷回传，部分字迹漫漶"
+  },
+  "sources": [
+    {
+      "kind": "film_card",
+      "citation": "胶片卡片 1989-04-18 第7张",
+      "collector": "赵摄",
+      "collected_at": "1989-04-18"
+    }
+  ],
+  "items": [
+    {
+      "file_fingerprint": "sha256:9f2c1e",
+      "media_kind": "negative",
+      "captured_at": "1989-04-18",
+      "caption": {
+        "text": "晋剧《打金枝》演出后台，演员候场",
+        "basis": "胶片卡片原文",
+        "author": "赵摄"
+      },
+      "genre_label": "晋剧",
+      "place_name": "晋中某村古戏台",
+      "persons": [
+        {"name": "王爱莲", "role": "演员"},
+        {"name": "赵摄", "role": "摄影"}
+      ],
+      "troupes": [{"name": "晋中红旗剧团"}],
+      "plays": ["打金枝"]
+    }
+  ]
+}
