@@ -1,22 +1,6 @@
-"""提供基础运行状态接口。"""
+"""启动档案 HTTP 服务。"""
 
-import json
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from .api import main
 
-
-class Handler(BaseHTTPRequestHandler):
-    """返回档案服务的运行状态。"""
-
-    def do_GET(self) -> None:
-        if self.path != "/health":
-            self.send_error(404)
-            return
-        body = json.dumps({"状态": "档案服务已启动"}, ensure_ascii=False).encode()
-        self.send_response(200)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-
-ThreadingHTTPServer(("0.0.0.0", 8080), Handler).serve_forever()
+if __name__ == "__main__":
+    main()
